@@ -1,5 +1,20 @@
 {% extends "base.html"%}
 {% block content %}
     <h2>Сложние двух чисел</h2>
+    <form action="" method="POST" novalidate>
+        <p>
+            {{ numbers1.numbers1.label }}<br>
+            {{ numbers1.numbers1 }}
+        </p>
+        <p>
+            {{ numbers1.numbers2.label }}<br>
+            {{ numbers1.numbers2 }}
+        </p>
+        <p>
+            {{ numbers1.submit() }}
+        </p>
 
+    </form>
+
+<h3>{{ get_flashed_messages() }}</h3>
 {% endblock %}
